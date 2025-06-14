@@ -54,7 +54,6 @@ class SecureStorage {
     return email;
   }
 
-  //Code
   static Future<void> saveCode(String code) async {
     await _storage.write(key: _codeKey, value: code);
   }
